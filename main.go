@@ -10,8 +10,8 @@ import (
 
 func main() {
 	var ns = flag.String("ns", "", "name server to use (default: use /etc/resolv.conf)")
-	var duration = flag.Duration("duration", 1*time.Minute, "how long do you want to query the name server? (default: 1m)")
-	var rate = flag.Int("rate", 1, "how many DNS queries per second? (default: 1")
+	var duration = flag.Duration("duration", 1*time.Minute, "how long do you want to query the name server?")
+	var rate = flag.Int("rate", 1, "how many DNS queries per second?")
 
 	flag.Parse()
 
